@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><b>CLUB MEMBERSHIP FORM</b></title>
+</head>
+<body>
+	<form action="#">
+	<h1 align="center"><b><u>CLUB MEMBERSHIP FORM</u></b></h1>
+	<p><label>NAME :<input float: type="text" name="name" id="name" required placeholder="ENETR YOUR NAME"></label></p>
+	<p><label>EMAIL :<input type="text" name="email" required placeholder="example@gmail.com"></label></p>
+    <p><label for="phonenumber" class="required">PHONE NO. :</label>
+	<input type="text" name="phonenumber"  required pattern="^\(\d{3}\) \d{3}-\d{4}$"
+	title="not a right format"></p>
+	<p><label >SEX :</label>
+	<input type="checkbox" name="MALE" >MALE
+	<input type="checkbox" name="FEMALE" >FEMALE<br></p>
+   <p><label>AGE :<input type="number" name="age" max="30" min="16" step="1"></label></p>
+ <p><label>WANT TO JOIN : <input type="text" list="timeperiod" required ></label></p>
+    <datalist id="timeperiod">
+    	<option>part-time</option>
+    	<option>full-time</option>
+   </datalist>
+   <p><label>DOB :<input type="date" name="date"></label></p>
+   <p><label>GET TO KNOW ABOUT US :</label></p>
+	<input type="checkbox" name="INSTAGRAM" >INSTAGRAM<br>
+    <input type="checkbox" name="FACEBOOK" >FACEBOOK<br>
+	<input type="checkbox" name="LINKEDIN" >LINKEDIN<br>
+	<input type="checkbox" name="BLOG" >BLOG<br>
+	<input type="checkbox" name="PEOPLE" >FROM PEOPLE<br>
+	<p><label>OUR POPULARITY IN YOUR REGION :   low<input type="range" name="popularity" max="high" 
+	 min="low" required>high</label></p>
+	 <p><label>FEEDBACK :<br></label></p><textarea rows="7" cols="80" placeholder="your feedback here!!!!!" required=""></textarea>
+	 <br><br><br><input type="submit" name="submit">
+	</form>
+</body>
